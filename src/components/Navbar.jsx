@@ -21,20 +21,21 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (id) => {
-    setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
       const offset = 80; // Offset for navbar height
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
 
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
     }
+    // Delay closing drawer slightly to allow click event to register fully on touch devices
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 150);
   };
 
   return (
