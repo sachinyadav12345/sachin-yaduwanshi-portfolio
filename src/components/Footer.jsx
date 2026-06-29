@@ -22,7 +22,7 @@ export const Footer = () => {
               Sachin <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Yaduwanshi</span>
             </span>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 font-medium">
-              &copy; {new Date().getFullYear()} All rights reserved. Made with &hearts; in India.
+              &copy; {new Date().getFullYear()} All rights reserved.
             </p>
           </div>
 
