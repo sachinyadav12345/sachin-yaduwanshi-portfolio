@@ -2,13 +2,16 @@
   "name": "sachin-yaduwanshi-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://YourGitHubUsername.github.io/sachin-yaduwanshi-portfolio",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "lint": "oxlint",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@reduxjs/toolkit": "^2.12.0",
@@ -25,6 +28,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "autoprefixer": "^10.5.2",
+    "gh-pages": "^6.3.0",
     "oxlint": "^1.69.0",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.19",
