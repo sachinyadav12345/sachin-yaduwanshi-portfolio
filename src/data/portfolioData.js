@@ -31,7 +31,7 @@ export const stats = [
 ];
 
 export const aboutDetails = {
-  text: "I am a Frontend Developer with more than 1 year of experience in building responsive and user-friendly web applications using React.js. I enjoy creating clean user interfaces, integrating APIs, and developing reusable components. I have worked on admin dashboards, academy platforms, and business applications while focusing on performance and a better user experience.",
+  text: "I am a Frontend Developer | UI/UX developer  with more than 1 year of experience in building responsive and user-friendly web applications using React.js. I enjoy creating clean user interfaces, integrating APIs, and developing reusable components. I have worked on admin dashboards, academy platforms, and business applications while focusing on performance and a better user experience.",
   highlights: [
     "1+ Years Professional Experience",
     "React.js Specialist & React Router Integration",
